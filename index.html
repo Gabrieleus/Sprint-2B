@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+  <title>NetFelix</title>
+</head>
+
+<body>
+<div class="padre">
+  <header>
+    <div class="contenedor">
+    <h1 class="logotipo">NetFelix</h1>
+    <nav>
+      <ul id="navUl">
+        <a href="#peliculasrecomendadas">Peliculas Recomendadas</a>
+        <a href="#form">Se Parte De Nuestra Comunidad</a>
+      </ul>
+    </nav>
+  </div>
+  </header>
+
+  <main>
+    <div class="pelicula-principal">
+			<div class="contenedor">
+				<h3 class="titulo">El Renacido</h3>
+				<p class="descripcion">
+                    En la década de 1820, un cazador lucha por sobrevivir para vengarse de un despiadado mercenario que lo abandonó a su suerte junto al río Misuri. Épica de la venganza con 12 nominaciones al Óscar y ganadora de la estatuilla a mejor actor para Leonardo DiCaprio.				</p>
+				<a class="boton" href="#video"><i class="fas fa-play"></i>Reproducir</a>
+			</div>
+		</div>
+
+    <video id="video" src="multimedia/Revenant_ El Renacido_ Trailer Subtitulado en Español (HD).mp4" controls></video>
+    
+    <h4 class="peliculasrecomendadas" id="peliculasrecomendadas">Peliculas Mas Vistas</h4>
+    
+    <div class="row" id="items"></div>
+    
+  
+    <template id="template-card">
+      <div class="card">
+        <h5></h5>
+            <img id="image" src="" alt="" class="img-thumbnail my-4"></img>        
+        <p></p>
+      </div>
+    </template>   
+    
+    <div id="detail"></div>
+
+
+    <div id="listaCompra"  class="mt-4"></div>
+
+
+    <div id="listaTotal"  class="mt-4"></div>
+
+    <div class="contenedor-Formulario">
+      <div class="content">
+         
+          <form action="" class="form" id="form" onsubmit=""><!--functionSubmit(event)-->
+              <h2>Unete a Nuestra Comunidad</h2>
+              <input id="inputName" type="text" placeholder="Nombre" required >
+              <input id="email" type="Email" name="email" placeholder="Email" required>
+              <select name="gender" id="gender" value="Gender">
+                  <option value="0">Genero</option>
+                  <option value="F">Mujer</option>
+                  <option value="M">Hombre</option>
+                  <option value="O">Otro</option>
+              </select>
+              <label for="">Adjuntar Mensaje</label>
+              <textarea id="msm" cols="30" rows="10" placeholder="Compartenos Por que deseas unirtenos..." ></textarea>
+              <input type="submit" value="Submit">
+          </form>
+      </div>
+  </div>
+</div>
+  </main>
+
+
+ 
+
+
+  <footer>
+    <div class="containerF">
+      <p>
+        "El único modo de hacer un gran trabajo es amar lo que haces - Steve Jobs"
+      </p>
+    </div>
+  </footer>
+  <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  <script src="JS/script.js" type="module"></script>
+  <script src="data/data.js" type="module"></script>
+</body>
+
+</html>

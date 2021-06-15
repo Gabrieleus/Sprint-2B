@@ -1,0 +1,295 @@
+
+:root{
+    --azul: blue;
+  	--fondo: black;
+}
+    
+
+body{
+    background: url(https://i.pinimg.com/originals/10/b0/47/10b0471d79cce7e9ac9603cc91b9f65f.jpg) ; 
+    color: white; 
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+.padre{
+  display: block;
+  margin: 5%;
+  background-color: #141414;
+  border-radius: 5%;
+}
+video{
+ width:  1137px;
+}
+.pelicula-principal {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: #fff;
+	background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0,0,0,.50) 100%), url(../images/Backdrop.png);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+}
+
+.pelicula-principal .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.pelicula-principal .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principal .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-principal .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-principal .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/*header*/
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 30px 0;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  background-color: #141414;
+}
+
+header .logotipo {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--azul);
+	font-size: 40px;
+}
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+header nav a:hover,
+header nav a.activo {
+	color: #FFF;
+}
+
+h4{
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Bebas Neue';
+}
+
+#image{
+    max-width: 100%;
+    width: 200px;
+    height: 300px;
+    margin-left: 30px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    border-radius: 25%;
+}
+
+
+.card{
+    border: 1px solid white;
+    display: inline-block;
+   
+}
+
+#template-card{
+  display: flex;
+  
+
+}
+
+.row{
+    margin-left: 50px;
+}
+
+h5{
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 25px;
+    color: #AAA;
+}
+
+#form{
+  width: 100%;
+  padding: .7rem;
+  border-radius: 6px;
+  font-size: 1.0rem;
+  border: none;
+  max-width: 50%;
+  margin-top: 30px;
+}
+
+
+.contenedor-Formulario{
+    width: 100%;   
+    margin-left: 25%;
+}
+
+
+.form h2{
+    font-size: 24px;
+  }
+ 
+.form input, select{
+      inline-size: 100%;
+      box-sizing: border-box;
+      color:white;
+      background-color:#251F24 ;
+      border-radius: 8px;
+      padding-inline: 16px;
+      padding-block: 12px;
+      font-size: 16px;
+      margin-block-end:24px
+}
+
+.form input[type="submit"]{
+    background: #157EFB;
+    border: none;
+}
+
+
+.form label{
+   font-size: 18px;
+}
+
+#msm{
+  inline-size: 100%;
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 10px;
+
+}
+
+.form{
+  background-color: #2222425d;
+  padding: 3rem 2.5rem;
+  border-radius: 7px;
+}
+
+
+
+footer{
+    margin-left: 2.5%;
+    width: 100%;
+  }
+
+.containerF{
+        display:inline-flex;
+        flex-direction: row;
+        background-color: black;
+        width: 95%;
+        margin: 5% auto;
+        flex-wrap: wrap;
+        justify-content: space-around;   
+        border-radius: 100%;
+}
+
+
+@media screen and (max-width: 640px) {
+
+  #navUl{
+     margin-right:0%;
+     margin-left: 35%;
+     display: inline;
+   }
+
+  main{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body{
+    max-width: 80%;
+    padding:0
+  }  
+
+  .row{
+    margin: 5% 5%;
+    margin-left: 25%;
+    margin-right: 0%;
+
+  }
+
+  img{
+     max-width: 100%;
+  }
+
+  video{
+    max-width: 100%;
+    margin-left: 12%;
+
+  }
+
+  .card{
+     padding-right: 5%;
+     padding-left: 25%;  
+  }
+
+  .content{
+    padding-right: 0%;
+    padding-left: 0%; 
+    margin:0%;
+    margin-right: 25%;
+  }
+
+#form{
+  margin: 0%;
+  max-width: 100%;
+}
+
+  .containerF{
+    text-align: center;
+    margin: 0%;
+  }
+
+  footer{
+    padding:0%;
+    margin-left: 15%;
+    margin-right: 0%;
+  }
+
+}
